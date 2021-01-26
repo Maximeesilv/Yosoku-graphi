@@ -1,16 +1,26 @@
 const { ApolloServer } = require('apollo-server');
+const { INCOMES } = require('./json-database/incomes');
 
 // Define full query types
 const typeDefs = `
+    type Income {
+        id: Int,
+        date: String!,
+        amount: Int,
+        transactor: String
+    }
+
     type Query {
-        hello: String!
+        totalIncomes: Int!,
+        incomes: [Income]!
     }
 `;
 
 // Has to associate data to entry points
 const resolvers = {
     Query: {
-        hello: () => "Hello, l'api fonctionne"
+        totalIncomes: () => INCOMES.length,
+        incomes: () => INCOMES
     }
 };
 
