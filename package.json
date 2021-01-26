@@ -3,5 +3,16 @@
     "apollo-server": "^2.19.2",
     "graphql": "^15.5.0",
     "nodemon": "^2.0.7"
-  }
+  },
+  "name": "yosoku-graphi",
+  "version": "1.0.0",
+  "main": "index.js",
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon -e js,json,graphql"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": "A little GraphQL overview and full test of the tool"
 }
