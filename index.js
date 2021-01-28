@@ -3,11 +3,18 @@ const { INCOMES } = require('./json-database/incomes');
 
 // Define full query types
 const typeDefs = `
+    enum CountryCodes {
+        FR
+        ESP
+        EN
+    }
+
     type Income {
         id: Int,
         date: String!,
         amount: Int,
-        transactor: String
+        transactor: String,
+        countryCode: CountryCodes!
     }
 
     type Query {

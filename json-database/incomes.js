@@ -3,19 +3,22 @@ const INCOMES = [
         id: 1,
         date: new Date(),
         amount: 12000,
-        transactor: 'Accor INC.'
+        transactor: 'Accor INC.',
+        countryCode: 'FR'
     },
     {
         id: 2,
         date: new Date(),
         amount: 9010,
-        transactor: 'Europcar'
+        transactor: 'Europcar',
+        countryCode: 'ESP'
     },
     {
         id: 3,
         date: new Date(),
         amount: 9650,
-        transactor: 'Bloomays'
+        transactor: 'Bloomays',
+        countryCode: 'ESP'
     }
 ];
 
